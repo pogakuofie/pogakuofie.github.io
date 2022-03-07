@@ -1,211 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Poga Kuofie - Portfolio Website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_row">
+        <h3 class="logo">Startup3</h3>
+        <ul>
+          <li>Features</li>
+          <li>Download</li>
+          <li>Docs</li>
+          <li>Support</li>
+          <li>Blogs</li>
+        </ul>
+      </div>
+      <div class="nav_row">
+        <ul>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-facebook"></i></li>
+          <li><i class="fa fa-google-plus"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header"><h2>Simple & Beautiful Ready For Use</h2></div>
+    <div class="youtube">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-upyPouRrB8?controls=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="msg_img">
+      <div>
+        <h3>Better design for your content.</h3>
+        <p>
+          In publishing and graphic design, Lorem ipsum is a placeholder text
+          commonly used to demonstrate the visual form of a document or a
+          typeface without relying on meaningful content. Lorem ipsum may be
+          used as a placeholder before the final copy is available.
+        </p>
+
+        <ol>
+          <li> Retina Ready</li>
+          <li>Responsive</li>
+        </ol>
+      </div>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="iphone 13"
+      />
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <title>Wemmy Woods - Portfolio</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poga Kuofie - Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500&display=swap"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: MyResume - v4.7.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <!-- ======= Mobile nav toggle button ======= -->
-    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex flex-column justify-content-center">
-      <nav id="navbar" class="navbar nav-menu">
-        <ul>
-          <li>
-            <a href="#hero" class="nav-link scrollto active"
-              ><i class="bx bx-home"></i> <span>Home</span></a
-            >
-          </li>
-          <li>
-            <a href="#about" class="nav-link scrollto"
-              ><i class="bx bx-user"></i> <span>About</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-      <!-- .nav-menu -->
-    </header>
-    <!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Wemmy Woods</h1>
-        <p>
-          I'm
-          <span
-            class="typed"
-            data-typed-items="Power Woman, Developer, Fashion Designer"
-          ></span>
-        </p>
-        <div class="social-links">
-          <a
-            href="https://www.instagram.com/wemmywoods/"
-            class="twitter"
-            target="__blank"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/wemmywoods/"
-            class="instagram"
-            target="__blank"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/wemmywoods/"
-            class="google-plus"
-            target="__blank"
-            ><i class="bx bxl-skype"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/wemmywoods/"
-            class="linkedin"
-            target="__blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
+    <div class="container">
+      <h3 class="header">
+        Life on the go. Digital normad. Wonderer. Free Spirited. Polyamorous.
+        Father to Aya.
+      </h3>
+      <div class="inner">
+        <nav id="menu">
+          <div class="picture_name">
+            <img
+              src="https://avatars.githubusercontent.com/u/14319774?v=4"
+              alt="Poga's Profile Picture"
+              class="profile_picture"
+            />
+            <h4 class="username">Poga Kuofie</h4>
+          </div>
+          <div class="socials">
+            <a href="https://twitter.com/pogakuofie" target="__blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://fb.com/pogakuofie" target="__blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/mensaabayie/" target="__blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+          <p>
+            Tawba; The gods ask me to come back home, to live a legacy for them.
+            Father to Aya! @abaefo
+            3232691c-685b-524e-894f-133b647054b8:110012:21
+          </p>
+          <p>Accra, Ghana</p>
+          <a href="http://pogakuofie.com" target="__blank">Website</a>
+        </nav>
+        <div class="tabs">
+          <p>Technologies</p>
+          <ul>
+            <li>Javascript</li>
+            <li>Reactjs</li>
+            <li>React Native</li>
+            <li>Nodejs</li>
+            <li>Firebase</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- End Hero -->
-
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>About</h2>
-            <p>
-              Wemmy Woods is FashionPreneur and Style icon who is building a
-              global fashion brand.She is taking advantage of the latest
-              breakthrough in technology to build a global tech-enabled fashion
-              brand that can cater to all women's fashion needs irrespective of
-              race,culture and body types.
-            </p>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4">
-              <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <h3>Tech Entrepreneur &amp; Fashion Designer.</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Birthday:</strong> <span>1 May 1995</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Website:</strong> <span>www.example.com</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Phone:</strong> <span>+123 456 7890</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>City:</strong> <span>New York, USA</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>30</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Degree:</strong> <span>Master</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>PhEmailone:</strong>
-                      <span>email@example.com</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Freelance:</strong> <span>Available</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
-    </main>
-    <!-- End #main -->
-
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    </div>
   </body>
 </html>
